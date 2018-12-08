@@ -1,0 +1,181 @@
+.background {
+    background: url(http://cloud.hunger-valley.com/music/public_tuijian_spring.jpg-big) center center no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    left: -10px;
+    top: -10px;
+    bottom: -10px;
+    right: -10px;
+    filter: blur(4px);
+}
+.background::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,0.4);  
+}
+main {
+    height: 76vh;
+    padding-top: 12vh;
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+}
+main .aside {
+    float: left;
+}
+main .aside .pic {
+    width: 46vh;
+    height: 46vh;
+    background: url(http://cloud.hunger-valley.com/music/public_tuijian_spring.jpg-big) center center no-repeat;
+    background-size: cover; 
+}
+main .aside .actions {
+    width: 46vh;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4vh;
+}
+main .aside .actions span {
+    font-size: 5vh;
+    color: rgba(255,255,255,0.4);
+    transition: color .2s;
+    cursor: pointer;
+}
+main .aside .actions span:hover{
+    color:white;
+}
+main .details {
+    margin-left: 10vh;
+    color: white;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+main .details .album {
+    font-size: 2vh;
+    color: white;
+    padding: .4em .8em;
+    background-color: #2e6eec;
+}
+main .details h1 {
+    margin-top: 2vh;
+    font-size: 5vh;
+}
+
+main .details .info {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+main .details .info .iconfont {
+    font-size: 3vh;
+}
+main .details .area-bar {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+main .details .area-bar .bar {
+    background-color: rgba(255, 255, 255, 0.6);
+    flex-grow: 1;
+    flex-shrink: 1;
+    height:1vh;
+    border-radius: 10px;
+}
+main .details .area-bar .bar .bar-progress {
+    background-color: white;
+    height:1vh;
+    width: 50%;
+    border-radius: 10px;
+    transition: width 1s;
+}
+main .details .area-bar .current-time {
+    margin-left: 8px;
+}
+main .details .author {
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+    font-size: 2vh;
+    color: rgba(255, 255, 255, 0.6);
+}
+footer {
+    height: 24vh;
+    position: relative;
+    background-color:rgba(255,255,255,0.4);
+}
+footer:hover  .icon-shangyi{
+    opacity: 1;
+}
+footer:hover  .icon-xiayi{
+    opacity: 1;
+}
+footer .iconfont {
+    position: absolute;
+    font-size: 5vh;
+    color: white;
+}
+footer .icon-shangyi {
+    left: 5%;
+    top: 50%;
+    transform:translateY(-50%);
+    color:rgba(255, 255, 255, 0.4);
+    transition: all .2s;
+    opacity: 0;
+    cursor: pointer;
+}
+footer .icon-shangyi:active {
+    color: white;
+}
+footer .icon-xiayi {
+    right: 5%;
+    top: 50%;
+    transform:translateY(-50%);
+    color:rgba(255, 255, 255, 0.4);
+    transition: all .2s;
+    opacity: 0;
+    cursor: pointer;
+}
+footer .icon-xiayi:active {
+    color: white;
+}
+footer .box {
+    width: 80%;
+    margin: 0 auto;
+    height: 24vh;
+    overflow: hidden;
+    position: relative;
+}
+footer .box ul {
+    position: absolute;
+    display: flex;
+    height: 100%;
+}
+footer .box ul li {
+    width: 20vh;
+    height: 20vh;
+    margin: 2vh 2vh 0 2vh;
+    text-align: center;
+}
+footer .box ul li:hover {
+    cursor: pointer;
+    box-shadow: 0px 0vh 0.5vh 0.5vh rgba(255,255,255,0.6);
+}
+footer .box ul .active {
+    box-shadow: 0px 0vh 0.5vh 0.5vh rgba(255,255,255,0.6);
+}
+footer .box ul li div {
+    height: 16vh;
+    background-position: center center;
+    background-size: cover;
+}
+footer ul li h3 {
+    font-size: 2vh;
+    color: rgba(255,255,255,0.6);
+    margin-top: 1vh;
+}
