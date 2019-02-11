@@ -91,7 +91,7 @@ main .details .area-bar .bar {
 main .details .area-bar .bar .bar-progress {
     background-color: white;
     height:1vh;
-    width: 50%;
+    width: 0;
     border-radius: 10px;
     transition: width 1s;
 }
